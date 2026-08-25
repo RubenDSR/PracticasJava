@@ -1,11 +1,35 @@
-import javax.swing.JFrame;
+import javax.swing.*;
 
+/*
+    Crea la ventana principal del programa
+*/
 public class PrincipalWindow extends JFrame
 {
+    private JPanel lamina;  // Lamina principal de la ventana
+
     public PrincipalWindow()
     {
+        // Bloque basico de la ventana principal
         setTitle("Principal Window");
-        setBounds( 600, 600, 600, 600 );
+        setBounds( 800, 400, 600, 600 );
         setVisible(true);
+        this.lamina = new JPanel();
+        add(this.lamina);
+
+        //Barra principal del programa
+        JMenuBar barra = new JMenuBar();
+        this.lamina.add(barra);
+
+        //Menu de la barra principal
+        JMenu menu = new JMenu("File");
+        barra.add(menu);
+
+        //Menu de archivo
+        JMenuItem file = new JMenuItem("New File");
+        menu.add(file);
+
+        //Menu de opciones
+        JMenu opciones = new JMenu("Opciones");
+        barra.add(opciones);
     }
 }
