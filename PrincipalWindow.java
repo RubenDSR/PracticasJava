@@ -1,5 +1,3 @@
-import java.awt.event.ActionListener;
-
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -31,9 +29,10 @@ public class PrincipalWindow extends JFrame
         JMenuItem file = new JMenuItem("New File");
         file.addActionListener(new ActionListener()
             {
-                public void actionPerformer(ActionEvent e)
+                public void actionPerformed(ActionEvent e)
                 {
-                    
+                    FileProgram file = new FileProgram();
+                    file.createFile();
                 }
             }
         );
