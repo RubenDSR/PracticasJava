@@ -1,4 +1,7 @@
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
+import java.awt.event.*;
 
 /*
     Crea la ventana principal del programa
@@ -26,6 +29,14 @@ public class PrincipalWindow extends JFrame
 
         //Menu de archivo
         JMenuItem file = new JMenuItem("New File");
+        file.addActionListener(new ActionListener()
+            {
+                public void actionPerformer(ActionEvent e)
+                {
+                    
+                }
+            }
+        );
         menu.add(file);
 
         //Menu de opciones
