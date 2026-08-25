@@ -32,10 +32,11 @@ public class PrincipalWindow extends JFrame
                 public void actionPerformed(ActionEvent e)
                 {
                     FileProgram file = new FileProgram();
-                    file.createFile();
+                    file.readFile();
                 }
             }
         );
+
         menu.add(file);
 
         //Menu de opciones

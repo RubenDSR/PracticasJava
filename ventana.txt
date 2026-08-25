@@ -1,0 +1,3 @@
+texto del archivo seleccionado en el path por defecto.
+texto del archivo seleccionado en el path por defecto.
+texto del archivo seleccionado en el path por defecto.
