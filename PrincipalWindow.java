@@ -1,4 +1,6 @@
 import javax.swing.*;
+
+import java.awt.BorderLayout;
 import java.awt.event.*;
 
 /*
@@ -16,6 +18,11 @@ public class PrincipalWindow extends JFrame
         setVisible(true);
         this.lamina = new JPanel();
         add(this.lamina);
+
+        // Cuadro de texto central de la pantalla.....continuar desde aqui....
+        JTextArea text_area = new JTextArea();
+        this.lamina.setLayout(new BorderLayout());
+        this.lamina.add(text_area, BorderLayout.SOUTH);
 
         //Barra principal del programa
         JMenuBar barra = new JMenuBar();
